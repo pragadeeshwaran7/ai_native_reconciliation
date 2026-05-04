@@ -1,0 +1,59 @@
+[
+  {
+    "discrepancy_type": "DUPLICATE_TRANSACTION",
+    "txn_id": "TXN-008",
+    "description": "txn_id appears 2 times in transactions",
+    "transaction_amount": "349.19",
+    "settled_amount": null,
+    "txn_timestamp": "2024-03-06 10:02:00",
+    "settlement_date": null,
+    "detail": {
+      "occurrences": 2,
+      "timestamps": [
+        "2024-03-06 10:02:00",
+        "2024-03-06 10:00:00"
+      ]
+    }
+  },
+  {
+    "discrepancy_type": "ORPHAN_REFUND",
+    "txn_id": "TXN-999",
+    "description": "Refund has no settlement and no corresponding parent payment",
+    "transaction_amount": "285.05",
+    "settled_amount": null,
+    "txn_timestamp": "2024-03-16 14:00:00",
+    "settlement_date": null,
+    "detail": {}
+  },
+  {
+    "discrepancy_type": "TIMING_MISMATCH",
+    "txn_id": "TXN-090",
+    "description": "Transaction in 2024-03 settled in 2024-04",
+    "transaction_amount": "1700.89",
+    "settled_amount": "1700.89",
+    "txn_timestamp": "2024-03-31 23:45:00",
+    "settlement_date": "2024-04-01 09:00:00",
+    "detail": {
+      "txn_month": "2024-03",
+      "settle_month": "2024-04"
+    }
+  },
+  {
+    "discrepancy_type": "AMOUNT_MISMATCH",
+    "txn_id": "AGGREGATE_ROUNDING",
+    "description": "Aggregate rounding drift of \u20b90.04 detected across 4 transactions (platform ROUND_HALF_UP vs bank ROUND_HALF_EVEN)",
+    "transaction_amount": "735.76",
+    "settled_amount": "735.72",
+    "txn_timestamp": null,
+    "settlement_date": null,
+    "detail": {
+      "affected_txns": [
+        "TXN-093",
+        "TXN-098",
+        "TXN-092",
+        "TXN-095"
+      ],
+      "aggregate_delta": "0.04"
+    }
+  }
+]

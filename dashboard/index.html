@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Payment Reconciliation Dashboard — Detect discrepancies between platform transactions and bank settlements">
+  <title>Payment Reconciliation Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💰</text></svg>">
+</head>
+<body>
+  <div class="bg-grid"></div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <div class="logo">
+        <div class="logo-icon">💰</div>
+        <span>ReconSync</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:12px;">
+        <span class="pulse-dot"></span>
+        <span class="header-badge">SYSTEM HEALTHY</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main">
+
+    <!-- Stats Row -->
+    <section id="stats-row" class="stats-row"></section>
+
+    <!-- Charts Row -->
+    <div class="grid-2">
+      <div class="panel fade-up">
+        <div class="panel-title"><span class="icon">📊</span> Discrepancy Breakdown</div>
+        <div id="bar-chart" class="bar-chart"></div>
+      </div>
+      <div class="panel fade-up">
+        <div class="panel-title"><span class="icon">🍩</span> Distribution</div>
+        <div id="donut-chart"></div>
+      </div>
+    </div>
+
+    <!-- Discrepancy Explorer -->
+    <div class="panel fade-up">
+      <div class="panel-title"><span class="icon">🔍</span> Discrepancy Explorer</div>
+      <div id="filter-bar" class="filter-bar"></div>
+      <div id="disc-cards" class="grid-2"></div>
+    </div>
+
+    <!-- Rounding Analysis -->
+    <div class="panel fade-up">
+      <div class="panel-title"><span class="icon">⚖️</span> Rounding Analysis</div>
+      <div id="rounding-detail"></div>
+    </div>
+
+    <!-- Detail Table -->
+    <div class="panel fade-up">
+      <div class="panel-title"><span class="icon">📋</span> Full Discrepancy Log</div>
+      <div id="disc-table"></div>
+    </div>
+
+    <!-- Assumptions -->
+    <div class="panel fade-up">
+      <div class="panel-title"><span class="icon">📌</span> System Assumptions</div>
+      <div id="assumptions" class="assumptions-grid"></div>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    Payment Reconciliation System &middot; Seed 42 &middot; Generated March 2024 &middot; All data synthetic
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

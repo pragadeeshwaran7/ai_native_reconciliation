@@ -1,0 +1,14 @@
+{
+  "total_transactions": 51,
+  "unique_transactions": 50,
+  "total_settlements": 49,
+  "discrepancy_counts": {
+    "DUPLICATE_TRANSACTION": 1,
+    "ORPHAN_REFUND": 1,
+    "TIMING_MISMATCH": 1,
+    "AMOUNT_MISMATCH": 1
+  },
+  "total_discrepancies": 4,
+  "amount_tolerance": "0.01",
+  "settlement_delay_assumed": "T+1"
+}
