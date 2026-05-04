@@ -95,4 +95,3 @@ Then navigate to `http://localhost:8080` in your browser.
 
 ---
 
-*Built with ❤️ for AI-Native Data Engineering.*
