@@ -1,0 +1,10 @@
+{
+  "name": "ai-native-reconciliation",
+  "version": "1.0.0",
+  "description": "Payment Reconciliation System with Dashboard",
+  "scripts": {
+    "build": "python3 main.py && cp summary_report.json discrepancy_report.json dashboard/",
+    "start": "cd dashboard && python3 -m http.server $PORT"
+  },
+  "dependencies": {}
+}
